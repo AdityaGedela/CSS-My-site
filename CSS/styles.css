@@ -1,0 +1,49 @@
+h1
+{
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin: 0 auto 0 auto;
+}
+body{
+margin: 0;
+text-align: center;
+background-color: #79DAE8;
+}
+
+p{
+margin: 0;
+}
+.bottom-cloud{
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+  /* it is located 300px from the bottom of the parent. */
+}
+.top-cloud
+{
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+.topcontainer{
+  position: relative;
+  padding-top: 100px;
+  /* here we gave padding top instead of margin-top because
+  if we give margin top then the whole will move down and the topcontainer also
+  but if we give padding-top then only the text will move down but not the topcontainer part
+  so as we gave its(topcontainer) position as relative means the things that are under topcontainer with absolute positioning like top and bottom Cloud
+  their parent is topcontainer.
+  therfore if we given top or left or right to these both relative psotionined classes these will be arranged wrt to the topcontaineras it is parent and relative positiotned.
+  now if we gave margin-top then
+whole topcontainer moves down therfore
+as we gave 50px for top in top-cloud, its position is 50px below the top of parent and parent moved down bcoz of margin padding therfeore
+top-cloud will be 50px below starting of topconatiner but not the body  as topcontainer moved down 100px(check in inspect by changing code).
+
+now if we give padding-top 100px then only text moves down but not topcontainer. therfore for absolute postioing of top-cloud its parent will be topcontainer
+only and topcontainer starts at body only no margin just padding margin
+
+therfore we gave 50px to top-cloud thefore it will be 50px below topcontainer i.e below body only, since topcontainerdidnt move down just its text moved down.
+thats whywe can observe the difference between margin-top and padding-top */
+}
